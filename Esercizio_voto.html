@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let voto = parseInt(prompt("Che voto ho preso?"))
+
+        if (voto == 30) {
+            console.log("Il voto e' ECCELLENTE")
+
+        } else
+            if (voto < 30 && voto >= 27) {
+                console.log("Il voto e' OTTIMO")
+
+            } else
+                if (voto < 27 && voto >= 24) {
+                    console.log("il voto e' DISTINTO")
+
+                } else
+                    if (voto < 24 && voto >= 21) {
+                        console.log(" il voto e' BUONO")
+
+                    } else
+                        if (voto < 21 && voto >= 18) {
+                            console.log("il voto e' SUFFICIENTE")
+                        } else 
+                        if(voto<18){
+                            console.log("il voto e' INSUFFICIENTE")
+                        } else console.log("il voto specificato e' inesistente")
+    </script>
+</body>
+
+</html>

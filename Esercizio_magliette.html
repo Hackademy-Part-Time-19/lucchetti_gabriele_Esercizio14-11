@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let quantitaStockBlu = 30
+        let quantitaStockRossa = 30
+        let quantitaStockGialla = 30
+        let quantitaRichiesta = parseInt(prompt("Definisci la quantita' di maglie da ordinare"))
+        let coloreMaglia = parseInt(prompt("Premi 1 per il colore Blu \n\n Premi 2 per il colore rosso \n\n Premi 3 per il colore giallo"))
+
+        switch (coloreMaglia) {
+            case 1:
+                console.log("ciao sono entrato")
+                if (quantitaStockBlu - quantitaRichiesta >= 0) {
+                    quantitaStockBlu = quantitaStockBlu - quantitaRichiesta;
+                    let eMail = prompt("Inserisci la tua e-mail")
+                    alert("e' stato inviato un messaggio alla mail" + eMail + "contenenti i dettagli sul suo ordine da" + quantitaRichiesta + "pz di maglie Blu")
+                } else { alert("la quantita' di maglie blu richiesta non e' disponibile!") }
+                break;
+            case 2:
+
+                if (quantitaStockRossa - quantitaRichiesta >= 0) {
+                    quantitaStockRossa = quantitaStockRossa - quantitaRichiesta;
+                    let eMail = prompt("Inserisci la tua e-mail")
+                    alert("e' stato inviato un messaggio alla mail" + eMail + "contenenti i dettagli sul suo ordine da" + quantitaRichiesta + "pz di maglie Rosse")
+                } else { alert("la quantita' di maglie rosse richiesta non e' disponibile!") }
+                break;
+            case 3:
+
+                if (quantitaStockGialla - quantitaRichiesta >= 0) {
+                    quantitaStockGialla = quantitaStockGialla - quantitaRichiesta;
+                    let eMail = prompt("Inserisci la tua e-mail")
+                    alert("e' stato inviato un messaggio alla mail" + eMail + "contenenti i dettagli sul suo ordine da" + quantitaRichiesta + "pz di maglie Gialle")
+                } else { alert("la quantita' di maglie gialle richiesta non e' disponibile!") }
+                break;
+            default:
+                alert("l'operazione richiesta non e' supportata!")
+        }
+    </script>
+</body>
+
+</html>
